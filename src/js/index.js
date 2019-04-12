@@ -1,4 +1,4 @@
-import 'waypoints/lib/noframework.waypoints.min.js';
+import 'waypoints/lib/noframework.waypoints.js';
 import SmoothScroll from 'smooth-scroll';
 
 const feature = new Waypoint({
