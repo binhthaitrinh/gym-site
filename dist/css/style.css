@@ -98,6 +98,7 @@ a:visited {
 }
 
 /* ----- BUTTONS ----- */
+
 .btn:link,
 .btn:visited {
     padding: 6px 20px;
@@ -105,14 +106,35 @@ a:visited {
     color: white;
     border-radius: 4px;
     font-weight: 400;
-    -webkit-transition: background-color 0.2s;
-    transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s, transform 0.4s;
+    transition: background-color 0.2s, transform 0.4s;
 }
 
 .btn:hover,
 .btn:active {
     background-color: #e67e22;
+    /* -webkit-animation-name: flyUp;
+    animation-name: flyUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; */
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
 }
+
+/* @keyframes flyUp {
+    from {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    to {
+      -webkit-transform: translateY(-20);
+      transform: translateY(-20);
+    }
+  } */
+
 
 .btn-signup:link,
 .btn-signup:visited {
@@ -122,6 +144,14 @@ a:visited {
    margin: 10px auto;
    border-radius: 4px;
    display: inline-block;
+   transition: background-color 0.4s, color 0.4s;
+   -webkit-transition: background-color 0.4s, color 0.4s;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #47C083;
+    color: white;
 }
 
 /* ----- ICON ----- */
@@ -180,6 +210,11 @@ header {
 nav {
     background-color: #282E3E;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 /* Main navi */
@@ -229,7 +264,7 @@ nav {
 
 .span-block {
     text-align: center;
-    width: 30%;
+    width: 32%;
 }
 
 .span-block p {
@@ -403,5 +438,66 @@ footer {
     top: 5px;
 }
 
+.go-to-top {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #282E3E;
+    z-index: 99999;
+    text-align: center;
+    vertical-align: center;
+    padding: 10px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.go-to-top:hover {
+    background-color: white;
+    color: #47C083;
+}
 
 
+/* -------------------------------------------------*/
+/* ANIMATION */
+/* -------------------------------------------------*/
+#delay-1 {
+    animation-delay: 200ms;
+}
+
+#delay-2 {
+    animation-delay: 400ms;
+}
+
+#delay-3 {
+    animation-delay: 600ms;
+}
+
+.animated .delay-0-5s {
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;
+  }
+
+.js--wp-1,
+.js--wp-2 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated {
+    opacity: 1;
+}
+
+
+.expand-on-hover:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.expand-on-hover {
+    -webkit-transition: transform 0.4s;
+    transition: transform 0.4s;
+}

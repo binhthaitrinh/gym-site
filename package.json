@@ -21,7 +21,11 @@
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
+    "animate.css": "^3.7.0",
     "babel-polyfill": "^6.26.0",
-    "waypoint": "^0.2.8"
+    "coffee-script": "^1.12.7",
+    "smooth-scroll": "^16.0.3",
+    "waypoint": "^0.2.8",
+    "waypoints": "^4.0.1"
   }
 }
