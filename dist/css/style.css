@@ -222,6 +222,7 @@ nav {
     list-style: none;
     display: flex;
     width: 15vw;
+    min-width: 250px;
     justify-content: space-between;
     text-transform: uppercase;
 }
