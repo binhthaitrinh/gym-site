@@ -338,10 +338,11 @@ textarea {
 }
 
 input[type=submit] {
-    display: inline-block;
+    /* display: inline-block; */
     border: 1px solid #47C083;
     background-color: white;
     width: 100%;
+    -webkit-appearance: none; /*FUCK IPAD*/
     padding: 10px 0;
     -webkit-transition: background-color 0.4s, color 0.4s;
     transition: background-color 0.4s, color 0.4s;
@@ -480,7 +481,7 @@ footer {
     animation-delay: 500ms;
   }
 
-.js--wp-1,
+/* .js--wp-1,
 .js--wp-2 {
     opacity: 0;
     -webkit-animation-duration: 1s;
@@ -490,7 +491,7 @@ footer {
 .js--wp-1.animated,
 .js--wp-2.animated {
     opacity: 1;
-}
+} */
 
 
 .expand-on-hover:hover {
