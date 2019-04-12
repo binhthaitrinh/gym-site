@@ -46,6 +46,7 @@ section {
 /* ----- HEADINGS ----- */
 h1 {
     font-weight: 500;
+    font-family: audiowide;
 }
 
 h2 {
@@ -156,7 +157,6 @@ header {
 
 .logo {
     font-weight: 600;
-    font-family: audiowide;
     text-transform: uppercase;
     font-size: 120%;
 }
@@ -317,3 +317,91 @@ input[type=submit]:active{
     cursor: pointer;
     color: white;
 }
+
+
+/* -------------------------------------------------*/
+/* FOOTER */
+/* -------------------------------------------------*/
+
+footer {
+    background-color: #282E3E;
+    padding: 50px;
+    font-size: 90%;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.left-side-footer {
+    width: 70%;
+}
+
+.right-side-footer {
+    width: 25%;
+}
+
+.section-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    font-size: 120%;
+}
+
+.social-links li {
+    margin-right: 25px;
+}
+
+.left-side-footer p {
+    margin-bottom: 20px;
+}
+
+.left-side-footer h1 {
+    margin-bottom: 20px;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-twitter,
+.fa-pinterest {
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+.fa-instagram:hover {
+    color: #517fa4;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.fa-pinterest:hover {
+    color: red;
+}
+
+.contact-info {
+    margin-top: 15px;
+    display: flex;
+    font-size: 90%;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-info i {
+    width: 10%;
+    position: relative;
+    top: 5px;
+}
+
+
+
