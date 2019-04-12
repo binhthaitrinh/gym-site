@@ -26,6 +26,7 @@
     "coffee-script": "^1.12.7",
     "smooth-scroll": "^16.0.3",
     "waypoint": "^0.2.8",
-    "waypoints": "^4.0.1"
+    "waypoints": "^4.0.1",
+    "wow.js": "^1.2.2"
   }
 }
