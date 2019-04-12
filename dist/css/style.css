@@ -116,9 +116,11 @@ a:visited {
 .btn-signup:link,
 .btn-signup:visited {
    color: #47C083; 
-   padding: 6px 30px;
+   padding: 8px 60px;
    border: 1px solid #47C083;
-   margin: 40px;
+   margin: 10px auto;
+   border-radius: 4px;
+   display: inline-block;
 }
 
 /* ----- ICON ----- */
@@ -238,11 +240,31 @@ nav {
 /* -------------------------------------------------*/
 /* SECTION PRICING */
 /* -------------------------------------------------*/
-.pricing-block {
-    width: 100%;
-    border-collapse: collapse;
+.section-pricing {
+    background-color: #BFC4CD;
 }
 
-.pricing-block td {
-    border: 1px solid black;
+.section-pricing h3 {
+    background-color: #282E3E;
+    margin-bottom: 0;
+    padding: 10px 0;
+    color: white;
+}
+.span-block p {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.section-pricing .span-block {
+    background-color: white;
+}
+
+.highlight-block {
+    position: relative;
+    bottom: 15px;
+}
+
+.highlight-block h3 {
+    text-transform: uppercase;
+    background-color: #47C083;
 }
